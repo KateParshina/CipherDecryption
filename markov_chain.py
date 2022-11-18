@@ -23,7 +23,7 @@ class MarkovChain:
         tokens_set = list(set(token for sequence in document for token in sequence))
         tokens_set.append(self.unknown_token)
         pi_vector = {t: 1 for t in tokens_set}
-        # pi_vector[self.unknown_token] = 1
+
         for sequence in document:
             first_token = sequence[0]
             pi_vector[first_token] += 1

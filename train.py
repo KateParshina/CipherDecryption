@@ -1,7 +1,8 @@
+from argparse import ArgumentParser
 from markov_chain import MarkovChain
 from preprocessing import Preprocessor
-from argparse import ArgumentParser
 from local_storage import load_text_file
+
 
 parser = ArgumentParser(description='TRAIN PROCESS')
 parser.add_argument('-d', metavar='-d', type=str, help='path to txt file with dataset', required=True)
